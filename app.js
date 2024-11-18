@@ -16,6 +16,14 @@ app.listen(port, () => {
   console.log(`Server on port ${port}`)
 })
 
-app.get('/', () => {
+app.get('/', (req, res) => {
   console.log('prova')
+  res.send ('Server del mio blog')
+})
+
+
+const array = require('image')
+
+app.get('/bacheca', (req, send) => {
+  res.send(`Questo è il mio server ${array}`)
 })

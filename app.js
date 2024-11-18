@@ -6,3 +6,16 @@ const port = 3000
    // console.log(res)
 //}) console.log(res)
 
+//console.log(express)
+//console.log(app)
+
+
+
+
+app.listen(port, () => {
+  console.log(`Server on port ${port}`)
+})
+
+app.get('/', () => {
+  console.log('prova')
+})

@@ -17,13 +17,17 @@ app.listen(port, () => {
 })
 
 app.get('/', (req, res) => {
-  console.log('prova')
-  res.send ('Server del mio blog')
+ console.log('prova')
+
+  
 })
 
+app.use(express.static('public'))
 
 const array = require('image')
 
-app.get('/bacheca', (req, send) => {
+app.get('/bacheca', (res, send) => {
   res.send(`Questo è il mio server ${array}`)
+  console.log(res)
 })
+
